@@ -1,0 +1,24 @@
+/* Motion utilities (kept separate for organization) */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes float { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(-10px);} }
+.floating { animation: float 5s var(--ease) infinite; }
+
+@keyframes shimmer { 0%{ background-position: -400px 0; } 100%{ background-position: 400px 0; } }
+.skeleton{ background: linear-gradient(90deg, var(--c-line) 0%, var(--c-bg-alt) 40%, var(--c-line) 80%); background-size: 800px 100%; animation: shimmer 1.6s linear infinite; border-radius: 6px; }
+
+@keyframes borderRun {
+  0%{ background-position: 0% 50%; }
+  100%{ background-position: 200% 50%; }
+}
+.gradient-border{
+  position: relative; padding: 2px; border-radius: 999px;
+  background: linear-gradient(90deg, var(--c-gold), var(--c-beige-deep), var(--c-gold));
+  background-size: 200% 200%; animation: borderRun 4s linear infinite;
+}
