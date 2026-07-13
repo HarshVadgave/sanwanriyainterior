@@ -6,7 +6,7 @@
   const CONFIG = {
     PUBLIC_KEY: 'jD9VXhTj5SyCJP8AM',
     SERVICE_ID: 'service_yj7k2c9',
-    TEMPLATE_ID: 'template_zb0vcbl'
+    TEMPLATE_ID: 'template_6hc7fzb'
   };
 
   const form = document.querySelector('#contact-form');
