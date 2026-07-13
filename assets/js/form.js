@@ -4,9 +4,9 @@
    ========================================================= */
 (function () {
   const CONFIG = {
-    PUBLIC_KEY: 'YOUR_EMAILJS_PUBLIC_KEY',
-    SERVICE_ID: 'YOUR_EMAILJS_SERVICE_ID',
-    TEMPLATE_ID: 'YOUR_EMAILJS_TEMPLATE_ID'
+    PUBLIC_KEY: 'jD9VXhTj5SyCJP8AM',
+    SERVICE_ID: 'service_yj7k2c9',
+    TEMPLATE_ID: 'template_zb0vcbl'
   };
 
   const form = document.querySelector('#contact-form');
