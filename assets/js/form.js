@@ -59,7 +59,6 @@
       }
       msg.textContent = '✓ Thank you. Our design team will contact you within 24 hours.';
       msg.classList.add('success');
-      form.reset();
       window.SW && window.SW.toast && window.SW.toast('Consultation request received', 'success');
     } catch (err) {
       msg.textContent = 'Something went wrong. Please call us at +91 84462 13222.';
